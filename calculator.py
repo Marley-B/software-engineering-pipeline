@@ -21,3 +21,6 @@ def root(a, b):
     return a **(1/b)
 def square(a,b):
     return a ** b
+
+def sinus(x):
+    return math.sin(x)

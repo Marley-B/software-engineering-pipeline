@@ -1,4 +1,4 @@
-from calculator import add, sub, root,square, multiply, divide, cosin, factorial
+from calculator import add, sub, root,square, multiply, divide, cosin, factorial, sinus
 import math
 
 def test_add():
@@ -26,3 +26,7 @@ def test_cosine():
 def test_factorial(a): 
    assert factorial(0) == 1
    assert factorial(5) == 120
+
+def test_sinus():
+    assert sinus(0) == 0
+    assert round(sinus(math.pi / 2), 5) == 1
