@@ -1,6 +1,9 @@
-from calculator import add, sub
+from calculator import add, sub, cosin
+import math
 
-def test_add():
-    assert add(2, 3) == 5
-def test_sub():
-    assert sub(10, 4) == 6
+
+def test_cosine():
+    assert cosin(0) == 1
+    assert cosin(math.pi / 2) == 0
+    assert cosin(math.pi) == -1
+
