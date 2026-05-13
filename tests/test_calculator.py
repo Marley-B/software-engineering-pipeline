@@ -1,4 +1,5 @@
-from calculator import add, sub, root, square, multiply, divide
+from calculator import add, sub, root, square, multiply, divide, cosin
+import math
 
 def test_add():
     assert add(2, 3) == 5
@@ -17,3 +18,7 @@ def test_root():
     assert root(27, 3) == 0
 def test_square():
     assert square(2, 3) == 8
+def test_cosine():
+    assert cosin(0) == 1
+    assert cosin(math.pi / 2) == 0
+    assert cosin(math.pi) == -1
