@@ -7,3 +7,14 @@ def sub(a, b):
 
 def cosin(x):
     return math.cos(x)
+def divide(a,b):
+    return a/b
+
+def multiply(a, b):
+    return a * b
+def root(a, b):
+    if(b == 0):
+        return None
+    return a **(1/b)
+def square(a,b):
+    return a ** b
