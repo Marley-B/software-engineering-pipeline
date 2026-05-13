@@ -1,4 +1,4 @@
-from calculator import add, sub, root, square, multiply
+from calculator import add, sub, root, square, multiply, divide
 
 def test_add():
     assert add(2, 3) == 5
@@ -8,6 +8,9 @@ def test_multiply():
     assert multiply(3, 4) == 12
     assert multiply(0, 5) == 0
 
+def test_divide():
+    assert divide(4, 2) == 2
+    assert divide(0, 5) == 0
 def test_root():
     assert root(4, 2) == 2
     assert root(3, 0) == None
