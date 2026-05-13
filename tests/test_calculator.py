@@ -34,7 +34,8 @@ def test_square():
 
 def test_cosine():
     assert cosin(0) == 1
-    assert cosin(math.pi / 2) == 0
+    # Use round() to handle floating-point precision issues
+    assert round(cosin(math.pi / 2), 5) == 0
     assert cosin(math.pi) == -1
 
 
