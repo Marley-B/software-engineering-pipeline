@@ -46,3 +46,4 @@ def test_factorial():
 def test_sinus():
     assert sinus(0) == 0
     assert round(sinus(math.pi / 2), 5) == 1
+    
