@@ -1,26 +1,41 @@
 import math
 
+
 def add(a, b):
     return a + b
+
+
 def sub(a, b):
     return a - b
-def factorial(a): 
-    if a <= 1: return 1
+
+
+def factorial(a):
+    if a <= 1:
+        return 1
     return factorial(a - 1) * a
+
 
 def cosin(x):
     return math.cos(x)
-def divide(a,b):
-    return a/b
+
+
+def divide(a, b):
+    return a / b
+
 
 def multiply(a, b):
     return a * b
+
+
 def root(a, b):
-    if(b == 0):
+    if b == 0:
         return None
-    return a **(1/b)
-def square(a,b):
+    return a ** (1 / b)
+
+
+def square(a, b):
     return a ** b
+
 
 def sinus(x):
     return math.sin(x)
